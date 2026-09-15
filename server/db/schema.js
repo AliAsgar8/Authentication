@@ -17,3 +17,9 @@ export const users = mysqlTable("users", {
   resetOtp: varchar("reset_otp", { length: 10 }).default(""),
   resetOtpExpireAt: timestamp("reset_otp_expire_at"),
 });
+
+export const posts = mysqlTable("posts", {
+  id: int("id").primaryKey().autoincrement(),
+  title: varchar("title", { length: 255 }).notNull(),
+  content: varchar("content", { length: 1000 }).notNull(),
+});

@@ -6,6 +6,7 @@ import { Home } from "./pages/Home";
 import { Login } from "./pages/Login";
 import { EmailVerify } from "./pages/EmailVerify";
 import { ResertPassword } from "./pages/ResertPassword";
+import { Posts } from "./pages/Post";
 
 export const App = () => {
   return (
@@ -16,6 +17,7 @@ export const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/email-verify" element={<EmailVerify />} />
         <Route path="/reset-password" element={<ResertPassword />} />
+        <Route path="/posts" element={<Posts />} />
       </Routes>
     </>
   );

@@ -3,7 +3,7 @@ import { users } from "../db/schema.js";
 import bcrypt from "bcryptjs";
 import { eq } from "drizzle-orm";
 import jwt from "jsonwebtoken";
-import transporter from "../db/nodeMailer.js";
+import transporter from "../db/nodemailer.js";
 import { EMAIL_VERIFY_TEMPLATE, PASSWORD_RESET_TEMPLATE } from "../db/emailTemplates.js";
 
 export const register = async (req, res) => {
